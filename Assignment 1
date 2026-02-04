@@ -7,6 +7,9 @@ by: my name
 ver: 1.0
 description: short 
 comment
+drawing
+your version of spreadsheet
+data dictionary
 -->
 create a style sheet
 <link rel = 'stylesheet' href= 'js-form-validation.css' type= 'text/css' />
