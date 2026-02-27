@@ -38,7 +38,7 @@ data dictionary
     <center>
         <div class="format">
             <table>
-				<tr>
+<tr>
     <th colspan="4">Create Patient Account</th>
 </tr>
 <!-- patient name portion -->
@@ -88,5 +88,288 @@ data dictionary
     </td>
 </tr>		
 <!-- dob portion -->
-				
-   
+<tr>
+    <td><label for="dob">Date of Birth:</label></td>
+    <td>
+        <input 
+		type="date" 
+        id="dob" 
+        name="dob"
+        placeholder="02/27/2010">
+	</td>
+</tr>
+<tr>
+    <td><label for="ssn">ssn:</label></td>
+	<td>
+        <input 
+		type="date" 
+		minlength= "9"
+		maxlength= "11"
+        id="ssn" 
+        name="ssn"
+		required
+		text= "Please enter your social security number"
+        placeholder="321-453-3098">
+    </td>
+</tr>
+<tr>
+    <th colspan="4"><hr></th> 
+</tr>
+<!-- patient cotact info-->
+<tr>
+    <th colspan="4">Contact Informtaion</th>
+</tr>
+<tr>
+    <td><label for="address1">Address Line 1:</label></td>
+    <td>
+        <input type="text" 
+        name="address1" 
+        id="address1" 
+        maxlength="30" 
+        required 
+        placeholder="4213 bending ct">
+    </td>
+</tr>
+<tr>
+    <td><label for="address1">Address Line 2:</label></td>
+    <td>
+        <input type="text" 
+        name="address2" 
+        id="address2" 
+        maxlength="30" 
+        required 
+        placeholder="3001 seacrest ln">
+    </td>
+</tr>
+<tr>
+    <td><label for="city">City:</label></td>
+    <td>
+        <input type="text" 
+        name="city" 
+        id="city" 
+        maxlength="30" 
+		title= "Please enter in your city"
+        required 
+        placeholder="Houston">
+    </td>
+</tr>
+<!-- all 50 states, DC and PR -->
+<tr>
+     <td class="td1"><label for="state">State:<Label></td>
+     <td>
+	     <select>
+           <option selected disabled>Please Select One</option>
+           <option value="AL">Alabama</option>
+           <option value="AK">Alaska</option>
+           <option value="AZ">Arizona</option>
+           <option value="AR">Arkansas</option>
+           <option value="CA">California</option>
+           <option value="CO">Colorado</option>
+           <option value="CT">Connecticut</option>
+           <option value="DE">Delaware</option>
+           <option value="DC">District of Columbia</option>
+           <option value="FL">Florida</option>
+           <option value="GA">Georgia</option>
+           <option value="GU">Guam</option>	
+           <option value="HI">Hawaii</option>	
+           <option value="ID">Idaho</option>	
+           <option value="IL">Illinois</option>	
+           <option value="IN">Indiana</option>	
+           <option value="IA">Iowa</option>	
+           <option value="KS">Kansas</option>	
+           <option value="KY">Kentucky</option>	
+           <option value="LA">Louisiana</option>	
+           <option value="ME">Maine</option>	
+           <option value="MD">Maryland</option>	
+           <option value="MA">Massachusetts</option>	
+           <option value="MI">Michigan</option>	
+           <option value="MN">Minnesota</option>	
+           <option value="MS">Mississippi</option>	
+           <option value="MO">Missouri</option>
+           <option value="MT">Montana</option>
+           <option value="NE">Nebraska</option>
+           <option value="NV">Nevada</option>	
+           <option value="NH">New Hampshire</option>	
+           <option value="NJ">New Jersey</option>	
+           <option value="NM">New Mexico</option>	
+           <option value="NY">New York</option>	
+           <option value="NC">North Carolina</option>	
+           <option value="ND">North Dakota</option>	
+           <option value="OH">Ohio</option>	
+           <option value="OK">Oklahoma</option>	
+           <option value="OR">Oregon</option>	
+           <option value="PA">Pennsylvania</option>	
+           <option value="PR">Puerto Rico</option>	
+           <option value="RI">Rhode Island</option>	
+           <option value="SC">South Carolina</option>	
+           <option value="SD">South Dakota</option>	
+           <option value="TN">Tennessee</option>	
+           <option value="TX">Texas</option>	
+           <option value="UT">Utah</option>	
+           <option value="VT">Vermont</option>	
+           <option value="VA">Virginia</option>	
+           <option value="WA">Washington</option>	
+           <option value="WV">West Virginia</option>	
+           <option value="WI">Wisconsin</option>	
+           <option value="WY">Wyoming</option>	
+        </select>
+       </td>
+ </tr>
+<tr>
+    <td><label for="zcode">Zipcode:</label></td>
+    <td>
+        <input type="text" 
+        name="zcode" 
+        id="zcode" 
+		pattern="[0-9]{5}" 
+		title= "Please enter in your zipcode"
+        required 
+        placeholder="74568">
+    </td>
+</tr>
+<tr>
+		<td><label for="phone">Phone Number:</label></td>
+    <td>
+        <input type="text" 
+        name="phone" 
+        id="phone" 
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+        required 
+        title="Please enter your phone number" 
+        placeholder="346-444-5467"/>
+    </td>
+</tr>
+<tr>
+    <td><label for="email">Email Adress:</label></td>
+    <td>
+        <input type="text" 
+        name="email" 
+        id="email" 
+		required
+        maxlength="30" 
+		title= "Please enter in your email"
+        placeholder="arya@gmail.com">
+    </td>
+</tr>
+<tr>
+    <th colspan="4"><hr></th> 
+</tr>
+<!-- next portion is patient history -->
+<tr>
+    <th colspan="4">Patient History</th>
+</tr>
+<tr>
+    <td><label for="history">Are you currently:</label></td>
+    <td>
+        <input type="checkbox" id="option1" value="Nursing"> Nursing
+        <input type="checkbox" id="option2" value="Pregnant"> Pregnant
+		<input type="checkbox" id="option3" value="On birth control"> On birth control
+		<input type="checkbox" id="option4" value="Taking medication"> Taking medication
+		<input type="checkbox" id="option5" value="Under medical treatment"> Under medical treatment
+    </td>
+</tr>
+<tr>
+    <td><label for="anesthesia">Have you ever had an allergic reaction to anesthesia?:</label></td>
+    <td>
+        <input type="radio" id="a1" name="anesthesia" value="Yes"> Yes
+        <input type="radio" id="a2" name="anesthesia" value="No"> No
+    </td>
+</tr>	
+<tr>
+    <td><label for="exper">Are you experiencing fever, cough, or shortness of breath?:</label></td>
+    <td>
+        <input type="radio" id="e1" name="exper" value="Yes"> Yes
+        <input type="radio" id="e2" name="exper" value="No"> No
+    </td>
+</tr>
+<tr>
+    <td><label for="diabetes">Is there a family history of diabetes?:</label></td>
+    <td>
+        <input type="radio" id="d1" name="diabetes" value="Yes"> Yes
+        <input type="radio" id="d2" name="diabetes" value="No"> No
+    </td>
+</tr>
+<tr>
+    <td class="td1"><label for="range">If experiencing pain, how is your pain level?<br/>(Rate it from a 1 to 10)</label></td>
+    <td>
+	    <input
+	     type="range"
+	     name="range"
+	     id="range"
+       min="1"
+       max="10"
+       value="0"
+       />
+       <span id="range-slider"></span>
+     </td>
+ </tr>
+<tr>
+    <td><label for="notes">What brings you in today:</label></td>
+    <td>
+        <textarea id="notes" name="notes" rows="3" cols="50" placeholder="I have stomach pain"></textarea>
+    </td>
+</tr>
+<tr>
+    <th colspan="4"><hr></th> 
+</tr>
+<tr>
+    <th colspan="4">Make Patient User and Password</th>
+</tr>
+<tr>
+    <td class="td1"><label for="uid">User ID:</label></td>
+    <td>
+        <input
+             type="text"
+             name="uid"
+             id="uid"
+             maxlength="20"
+             required
+             title="Please enter a user ID:"
+             placeholder="aryanair"
+                        />
+                    </td>
+ </tr>
+<tr>
+    <td><label for="pword">Password:</label></td>
+    <td>
+        <input type="password" 
+        name="pword" 
+        id="pword" 
+        minlength="10" 
+		title= "Please enter your password"
+		required>
+    </td>
+</tr>
+<tr>
+    <td><label for="pword">Confirm Password:</label></td>
+    <td>
+        <input type="password" 
+        name="c_pass" 
+        id="c_pass" 
+        minlength="10" 
+		title= "Please re-enter your password"
+		required>
+    </td>
+</tr>
+<tr>
+    <td colspan="4">
+        <center>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </center>
+    </td>
+</tr>
+ </table>
+ </div>
+ </center>
+ </form>
+ </footer>
+    <p>&#169; Kawaii Medical <a href="contactus.html">Contact Us!</a></p>
+</footer>
+<script src="hw1.js"></script>
+</body>
+</html>
+		 
+
+
+
