@@ -41,6 +41,7 @@ data dictionary
 				<tr>
     <th colspan="4">Create Patient Account</th>
 </tr>
+<!-- patient name portion -->
 <tr>
     <td><label for="fname">First Name:</label></td>
     <td>
@@ -50,19 +51,42 @@ data dictionary
         maxlength="30" 
         title="Please enter your first name" 
         required 
-        placeholder="yourname">
+        placeholder="Arya">
     </td>
 </tr>
 <tr>
-    <td><label for="mname">Middle Name:</label></td>
+    <td><label for="mname">Middle Initial:</label></td>
     <td>
         <input type="text" 
-        name="fname" 
-        id="fname" 
-        maxlength="30" 
-        title="Please enter your first name" 
-        required 
-        placeholder="yourname">
+        name="mname" 
+        id="mname" 
+        maxlength="1" 
+        title="Please enter your middle initial" 
+        placeholder="S">
     </td>
 </tr>
+<tr>
+    <td><label for="lname">Last Name:</label></td>
+    <td>
+        <input type="text" 
+        name="lname" 
+        id="lname" 
+        maxlength="30" 
+        title="Please enter your last name" 
+        required 
+        placeholder="Nair">
+    </td>
+</tr>
+<!-- patient gender portion -->
+<tr>
+    <td><label for="pgender">Gender:</label></td>
+    <td>
+        <input type="radio" id="g1" name="pgender" value="Male"> Male
+        <input type="radio" id="g2" name="pgender" value="Female"> Female
+        <input type="radio" id="g3" name="pgender" value="Other"> Nonbinary
+		<input type="radio" id="g4" name="pgender" value="I prefer not to say"> I prefer not to say
+    </td>
+</tr>		
+<!-- dob portion -->
+				
    
